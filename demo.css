@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .form-container {
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+  }
+  .banner-container {
+    background-color: #e9f8e5;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-image img {
+    width: 600px;
+    height: 600px;
+  }
+  .logo-image img {
+    height: 50px;
+    width: 114px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .form-label {
+    font-size: 16px;
+  }
+  .form-input {
+    margin-top: 6px;
+    width: calc(100% - 30px);
+    padding: 8px 40px 8px 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+  }
+  .form-submit {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: #73895d;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .form-submit:hover {
+    background: #6a7a4b;
+  }
+  .form-title {
+    font-size: 34px;
+  }
+  .input-icon {
+    position: relative;
+    width: 100%;
+  }
+  .input-icon i {
+    position: absolute;
+    top: 58%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .logo-image-mob {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+    .banner-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .form-container {
+      width: 96%;
+      padding: 10px;
+    }
+    .logo-image-mob {
+      height: 50px;
+      width: 114px;
+      display: block;
+    }
+    .logo-image {
+      display: none;
+    }
+    .logo-image img {
+      height: 49px;
+      width: 92px;
+    }
+    .banner-image img {
+      width: 100%;
+      height: auto;
+    }
+    .form-title {
+      font-size: 30px;
+    }
+    .form-input {
+      width: 100%;
+      padding: 8px 40px 8px 30px;
+    }
+    .input-icon i {
+      top: 50%;
+    }
+    .form-label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .input-icon i {
+      left: 10px;
+      top: 56%;
+    }
+  }
